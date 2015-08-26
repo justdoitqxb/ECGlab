@@ -1,4 +1,5 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@page import="com.busycoder.bean.User" %>
 <!DOCTYPE html>
 <html>
     <head>
@@ -9,9 +10,9 @@
 <center>
 <body>
     <%
-    String username = request.getParameter("username");
+    User user = (User)request.getAttribute("userInfo");
     %>
-	<div>Welcom, <%=username %></div>
+	<div>Welcom, <%=user.getUserName() %></div>
 </body>
 </center>
 </html>

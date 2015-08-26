@@ -12,7 +12,7 @@
                  request.getRequestDispatcher("/manage/login-error.jsp").forward(request,response);
                   }
              else{
-                 session.setAttribute("username", user.getUserName());                                
+                 session.setAttribute("userInfo", user);                                
                  request.getRequestDispatcher("/manage/login-success.jsp").forward(request,response);
                   }
 %>
