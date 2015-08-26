@@ -3,7 +3,7 @@
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src"/>
         <wb-resource deploy-path="/" source-path="/web"/>
         <wb-resource deploy-path="/Python" source-path="/Python"/>
-        <wb-resource deploy-path="/resource" source-path="/resource"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/resource"/>
         <property name="java-output-path" value="/ECGlab/build/classes"/>
         <property name="context-root" value="ECGlab"/>
     </wb-module>

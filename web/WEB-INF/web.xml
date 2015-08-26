@@ -2,19 +2,27 @@
 <web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
   <display-name>ECGlab</display-name>
   <servlet>
-  	<servlet-name>vc</servlet-name>
-  	<servlet-class>com.busycoder.servlet.VerificationCodeServlet</servlet-class>
+    <servlet-name>vc</servlet-name>
+    <servlet-class>com.busycoder.servlet.VerificationCodeServlet</servlet-class>
   </servlet>
   <servlet-mapping>
-  	<servlet-name>vc</servlet-name>
-  	<url-pattern>/vc</url-pattern>
+    <servlet-name>vc</servlet-name>
+    <url-pattern>/vc</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>up_load</servlet-name>
+    <servlet-class>com.busycoder.servlet.UploadServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>up_load</servlet-name>
+    <url-pattern>/up_load</url-pattern>
   </servlet-mapping>
   <welcome-file-list>
-    <welcome-file>mainpage.jsp</welcome-file>
+    <welcome-file>up_down_load/upload.jsp</welcome-file>
   </welcome-file-list>
   <resource-ref>
-	<res-ref-name>jdbc/ECGlab</res-ref-name>
-	<res-type>javax.sql.DataSource</res-type>
-	<res-auth>Container</res-auth>
+    <res-ref-name>jdbc/ECGlab</res-ref-name>
+    <res-type>javax.sql.DataSource</res-type>
+    <res-auth>Container</res-auth>
   </resource-ref>
 </web-app>
